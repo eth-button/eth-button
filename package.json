@@ -1,0 +1,26 @@
+{
+  "name": "eth-button",
+  "version": "0.2.0",
+  "description": "Press button, receive ETH",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testrpc": "ganache-cli --deterministic --seed 'eth-button' --blocktime 14",
+    "webpack": "webpack",
+    "dev": "webpack-dev-server",
+    "prettier": "prettier --ignore-path ./.prettierignore --write  \"{.,lib}/*.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^5.0.0",
+    "ethjs-rpc": "^0.1.8"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.0.3",
+    "prettier": "1.9.2",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
