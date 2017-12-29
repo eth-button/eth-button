@@ -4,7 +4,7 @@ import getSelf from "./lib/get-self";
 import createButton from "./lib/button";
 
 const currentProvider = getProvider(window);
-const rpc = new EthRPC(currentProvider);
+const rpc = currentProvider ? new EthRPC(currentProvider) : null;
 const self = getSelf(window);
 const button = createButton(window.document, self, rpc);
 
