@@ -2,6 +2,28 @@
 <html>
   <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-edd69ybiwhmqlbDyKzPlHgWOcJrJhTgKQx1B2gD2yZArS8Qn2oTOYg+9X2AZRNDr" crossorigin="anonymous">
+    <style type="text/css">
+      .CustomEtherButton .EthDonateButton {
+        background-color: #3E3F3A;
+        color: #F8F5F0;
+      }
+
+      .CustomEtherButton .EthDonateButton--Blockie {
+        display: none;
+      }
+
+      .CustomEtherButton .EthDonateButton--Content {
+        max-width: 100%;
+      }
+
+      .CustomEtherButton .EthDonateButton--LabelRow--Caption {
+        width: initial;
+      }
+
+      .CustomEtherButton .EthDonateButton--LabelRow--Address {
+        width: 65%;
+      }
+      </style>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary justify-content-between">
@@ -28,7 +50,7 @@
         <h2>One Line</h2>
         <p>Just one line of code is all you need.</p>
         <div class="card">
-          <pre class="m-0 card-header text-center"><code id="codeblock">&lt;script src="https://cdn.rawgit.com/eth-button/eth-button/33754e5eec4db2f34370435bc779b4fbeee93b6f/dist/eth-button.js" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;</code></pre>
+          <pre class="m-0 card-header text-center"><code id="codeblock">&lt;script src="https://cdn.rawgit.com/eth-button/eth-button/5f98348450a75d7774180e41fa5989795cf1804c/dist/eth-button.js" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;</code></pre>
           <div class="card-body">
             <form>
               <div class="form-group row m-0">
@@ -47,19 +69,19 @@
         <h2>Simple</h2>
         <p>A simple and straightforward mechanism to accept Ether donations</p>
         <div class="card col-xs-6">
-          <div class="card-body">
-            <script src="https://cdn.rawgit.com/eth-button/eth-button/33754e5eec4db2f34370435bc779b4fbeee93b6f/dist/eth-button.js" data-address="0xd2f4668D0e752e95a8CE01014233458471DDbA4B" data-meta="eth-button"></script>
+          <div class="card-body d-flex justify-content-center">
+            <script src="https://cdn.rawgit.com/eth-button/eth-button/5f98348450a75d7774180e41fa5989795cf1804c/dist/eth-button.js" data-address="0xd2f4668D0e752e95a8CE01014233458471DDbA4B" data-meta="eth-button"></script>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid bg-light py-5">
+    <div class="container-fluid bg-white py-5">
       <div class="container">
         <h2>Flexible</h2>
         <p>Easily create your own custom styles.</p>
         <div class="card col-xs-6">
-          <div class="card-body CustomEtherButton">
-            <script src="https://cdn.rawgit.com/eth-button/eth-button/33754e5eec4db2f34370435bc779b4fbeee93b6f/dist/eth-button.js" data-address="0xd2f4668D0e752e95a8CE01014233458471DDbA4B" data-meta="eth-button"></script>
+          <div class="card-body CustomEtherButton d-flex justify-content-center">
+            <script src="https://cdn.rawgit.com/eth-button/eth-button/5f98348450a75d7774180e41fa5989795cf1804c/dist/eth-button.js" data-address="0xd2f4668D0e752e95a8CE01014233458471DDbA4B" data-meta="eth-button"></script>
           </div>
         </div>
       </div>
@@ -68,7 +90,7 @@
       window.addEventListener('load', function() {
         var input = document.getElementById('addressEdit');
         var codeblock = document.getElementById('codeblock');
-        var textContent = '&lt;script src="https://cdn.rawgit.com/eth-button/eth-button/33754e5eec4db2f34370435bc779b4fbeee93b6f/dist/eth-button.js" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;';
+        var textContent = '&lt;script src="https://cdn.rawgit.com/eth-button/eth-button/5f98348450a75d7774180e41fa5989795cf1804c/dist/eth-button.js" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;';
         function onChange(e) {
           codeblock.innerHTML = textContent.replace('{YOUR ETHEREUM ADDRESS}', this.value);
         }

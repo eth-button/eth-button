@@ -13,7 +13,7 @@ Add script tag where you want the UI to appear:
 ```
 <script
   type="text/javascript"
-  src="https://cdn.rawgit.com/eth-button/eth-button/33754e5eec4db2f34370435bc779b4fbeee93b6f/dist/eth-button.js"
+  src="https://cdn.rawgit.com/eth-button/eth-button/5f98348450a75d7774180e41fa5989795cf1804c/dist/eth-button.js"
   data-address="{YOUR ETHEREUM ADDRESS}"
   data-meta="eth-button">
 </script>
