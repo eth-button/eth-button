@@ -28,7 +28,7 @@
         <h2>One Line</h2>
         <p>Just one line of code is all you need.</p>
         <div class="card">
-          <pre class="m-0 card-header text-center"><code id="codeblock">&lt;script src="{TBD}" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;</code></pre>
+          <pre class="m-0 card-header text-center"><code id="codeblock">&lt;script src="https://cdn.rawgit.com/eth-button/eth-button/1d8ece8d6e0f614b701d08e461a0e2df2304b283/dist/eth-button.js" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;</code></pre>
           <div class="card-body">
             <form>
               <div class="form-group row m-0">
@@ -48,7 +48,7 @@
         <p>A simple and straightforward mechanism to accept Ether donations</p>
         <div class="card col-xs-6">
           <div class="card-body">
-            <script src="{TBD}" data-address="" data-meta="eth-button"></script>
+            <script src="https://cdn.rawgit.com/eth-button/eth-button/1d8ece8d6e0f614b701d08e461a0e2df2304b283/dist/eth-button.js" data-address="0xd2f4668D0e752e95a8CE01014233458471DDbA4B" data-meta="eth-button"></script>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
         <p>Easily create your own custom styles.</p>
         <div class="card col-xs-6">
           <div class="card-body CustomEtherButton">
-            <script src="{TBD}" data-address="" data-meta="eth-button"></script>
+            <script src="https://cdn.rawgit.com/eth-button/eth-button/1d8ece8d6e0f614b701d08e461a0e2df2304b283/dist/eth-button.js" data-address="0xd2f4668D0e752e95a8CE01014233458471DDbA4B" data-meta="eth-button"></script>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
       window.addEventListener('load', function() {
         var input = document.getElementById('addressEdit');
         var codeblock = document.getElementById('codeblock');
-        var textContent = '&lt;script src="{TBD}" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;';
+        var textContent = '&lt;script src="https://cdn.rawgit.com/eth-button/eth-button/1d8ece8d6e0f614b701d08e461a0e2df2304b283/dist/eth-button.js" data-address="{YOUR ETHEREUM ADDRESS}" data-meta="eth-button"&gt;&lt;/script&gt;';
         function onChange(e) {
           codeblock.innerHTML = textContent.replace('{YOUR ETHEREUM ADDRESS}', this.value);
         }
