@@ -10,17 +10,22 @@
     "dev": "webpack-dev-server",
     "prettier": "prettier --ignore-path ./.prettierignore --write  \"{.,lib}/*.js\""
   },
-  "author": "",
+  "author": "eth-button",
+  "homepage": "https://eth-button.githubpages.io/eth-button/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eth-button/eth-button.git"
+  },
   "license": "ISC",
   "dependencies": {
-    "bignumber.js": "^5.0.0",
-    "ethjs-rpc": "^0.1.8"
+    "bignumber.js": "5.0.0",
+    "ethjs-rpc": "0.1.8"
   },
   "devDependencies": {
-    "ganache-cli": "^6.0.3",
+    "ganache-cli": "6.0.3",
     "prettier": "1.9.2",
-    "uglifyjs-webpack-plugin": "^1.1.4",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "uglifyjs-webpack-plugin": "1.1.4",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.9.7"
   }
 }
