@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "bignumber.js": "5.0.0",
+    "eth-send": "git+https://github.com/eth-button/eth-send.git#e8aef74cece9ec87872db88068a0b5dedb59e8f8",
     "ethjs-rpc": "0.1.8",
     "lib-blockies": "git+https://github.com/eth-button/lib-blockies.git#7a6e694cc0b4cee925184e402c7a3de5a7316222"
   },
